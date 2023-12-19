@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALAXYPARK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&family=Nunito:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" +++++++++++
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap">
+    <link rel="stylesheet" href="TrangtriWeb.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header class="row">
+            <div class="col-12 col-md-1">
+                <a href="trangchu.html"><img src="logo1.png" alt="Logo" width="150" height="100"
+                        class="img-fluid smaller-logo"></a>
+            </div>
+            <div class="col-12 col-md-11">
+                <h1>GALAXY PARK</h1>
+            </div>
+        </header>
+
+        <nav class="navbar navbar-expand-lg custom-bg-color">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul id="menu" class="navbar-nav me-auto">
+                        <li class="nav-item mr-5">
+                            <a class="nav-link active text-white" aria-current="page" href="trangchu.html"
+                                style="text-align: center;"><i class="bi bi-house-door"></i> Trang chủ</a>
+                        </li>
+                        <li class="nav-item mr-5">
+                            <a class="nav-link active text-white" aria-current="page" href="tintucchung.html"
+                                style="text-align: center;"><i class="bi bi-book"></i> Tin tức</a>
+                            <ul class="dropdown_menu">
+                                <li>
+                                    <a href="javascript:void(0)" style="text-align: center;"><i
+                                            class="bi bi-star-fill"></i> Nổi bật </a>
+                                </li>
+                                <li>
+                                    <a href="tintuyendung.html" style="text-align: center;"><i
+                                            class="bi bi-person-plus-fill"></i> Tuyển dụng</a>
+                                </li>
+                                <li>
+                                    <a href="tinsukien.html" style="text-align: center;"><i
+                                            class="bi bi-calendar-event-fill"></i> Sự kiện</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item mr-5">
+                            <a class="nav-link active text-white" aria-current="page" href="#"
+                                style="text-align: center;"><i class="bi bi-ticket-fill"></i> Đặt vé</a>
+                            <ul class="dropdown_menu">
+                                <li>
+                                    <a href="datveon.html" style="text-align: center;"><i
+                                            class="bi bi-qr-code-scan"></i> Online </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item mr-5">
+                            <a class="nav-link active text-white" aria-current="page" href="trochoi.html"
+                                style="text-align: center;"><i class="bi bi-controller"></i> Trò chơi</a>
+                            <ul class="dropdown_menu">
+                                <li>
+                                    <a href="trochoitrongnha.html" style="text-align: center;"><i
+                                            class="bi bi-house-fill"></i> Trong nhà </a>
+                                </li>
+                                <li>
+                                    <a href="trochoicamgiacmanh.html" style="text-align: center;"><i
+                                            class="bi bi-exclamation-triangle-fill"></i> Cảm giác mạnh</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item mr-5">
+                            <a class="nav-link active text-white" aria-current="page" href="phanhoi.html"
+                                style="text-align: center;"><i class="bi bi-info-circle"></i> Phản hồi</a>
+                        </li>
+                        <li class="nav-item mr-5">
+                            <a class="nav-link active text-white" aria-current="page" href="#"
+                                style="text-align: center;"><i class="bi bi-person-fill"></i> Nhân viên</a>
+                            <ul class="dropdown_menu">
+                                <li>
+                                    <a href="dangnhapnv.html" style="text-align: center;"><i
+                                            class="bi bi-house-fill"></i> Đăng nhập </a>
+                                </li>
+                                <li>
+                                    <a href="hienthi.html" style="text-align: center;"><i
+                                            class="bi bi-exclamation-triangle-fill"></i> Khách hàng đặt vé</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section id="datve"></section>
+        <div class="datve">
+            <div class="custom-content" style="margin-bottom: 30px;">
+                <h2 style="color: whitesmoke; margin-right: 30px;">Chọn loại vé</h2>
+                <div id="adultTicket" class="ticket-card">
+                    <h3>Người Lớn</h3>
+                    <p class="price">Giá vé: $20</p>
+                    <label for="adultQuantity">Số lượng:</label>
+                    <input type="number" id="adultQuantity" class="quantity-input" placeholder="Nhập số lượng" min="1"
+                        value="1">
+                    <br>
+                    <button class="addInfoButton" data-ticket="adultTicket">Thêm vào giỏ hàng</button>
+                </div>
+
+                <div id="childTicket" class="ticket-card">
+                    <h3>Trẻ Em</h3>
+                    <p class="price">Giá vé: $10</p>
+                    <label for="childQuantity">Số lượng:</label>
+                    <input type="number" id="childQuantity" class="quantity-input" placeholder="Nhập số lượng" min="1"
+                        value="1">
+                    <br>
+                    <button class="addInfoButton" data-ticket="childTicket">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+            <div class="giohang">
+                <h2>Giỏ hàng</h2>
+                <ul id="cartList"></ul>
+                <p id="totalPrice">Tổng tiền: $0</p>
+            </div>
+            <div class="thongtin">
+                <h2>Nhập thông tin và đặt vé</h2>
+                <label for="nameInput">Tên:</label>
+                <input type="text" id="nameInput" placeholder="Nhập tên"> <br>
+
+                <label for="phoneInput">Số điện thoại:</label>
+                <input type="text" id="phoneInput" placeholder="Nhập số điện thoại"> <br>
+
+                <label for="emailInput">Email:</label>
+                <input type="text" id="emailInput" placeholder="Nhập email"> <br>
+
+                <button id="addInfoButton">Đặt vé</button>
+            </div>
+        </div>
+    </div>
+    <footer class="row">
+        <div class="col-md-4">
+            <img src="logo1.png" alt="Logo" width="150" height="100" class="img-fluid smaller-logo">
+        </div>
+
+        <div class="col-md-4">
+            <span>
+                Công ty trách nhiệm hữu hạn một mình em <br>
+                Công viên giải trí GALAXY
+            </span>
+        </div>
+
+        <div class="col-md-4">
+            <span>Khách hàng đã đăng ký: 8624</span><br>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
+<script src="http://code.jquery.com/jquery-1.7.min.js"></script>
+<script>
+    $('#menu > li').hover(function () {
+        // khi thẻ menu li bị hover thì drop down menu thuộc thẻ li đó sẽ trượt xuống(hiện)
+        $('.dropdown_menu', this).slideDown();
+    }, function () {
+        // khi thẻ menu li bị out không hover nữa thì drop down menu thuộc thẻ li đó sẽ trượt lên(ẩn)
+        $('.dropdown_menu', this).slideUp();
+    });
+    $('.dropdown_menu > li').hover(function () {
+        // khi thẻ dropdown_menu li bị hover thì submenusubmenu thuộc thẻ li đó sẽ trượt xuống(hiện)
+        $('.submenu', this).slideDown();
+    }, function () {
+        // khi thẻ dropdown_menu li bị hover thì submenusubmenu thuộc thẻ li đó sẽ trượt lên(ẩnẩn)
+        $('.submenu', this).slideUp();
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        var cartItems = [];
+
+        $(".addInfoButton").click(function () {
+            var ticketType = $(this).data("ticket");
+            var nameInput = $("#nameInput").val();
+            var phoneInput = $("#phoneInput").val();
+            var emailInput = $("#emailInput").val();
+            var quantity;
+
+            if (ticketType === "adultTicket") {
+                quantity = $("#adultQuantity").val();
+            } else if (ticketType === "childTicket") {
+                quantity = $("#childQuantity").val();
+            }
+
+            var price = $("#" + ticketType + " .price").text();
+            var priceNumber = parseFloat(price.replace(/[^0-9.]/g, ''));
+            var subtotal = priceNumber * parseInt(quantity);
+
+            cartItems.push({
+                name: ticketType,
+                quantity: quantity,
+                subtotal: subtotal
+            });
+
+            localStorage.setItem("cartItems", JSON.stringify(cartItems));
+
+            updateTotalPrice();
+            updateCartList();
+
+            $("#" + ticketType + " .quantity-input").val(1);
+        });
+
+        $("#addInfoButton").click(function () {
+            var nameInput = $("#nameInput").val();
+            var phoneInput = $("#phoneInput").val();
+            var emailInput = $("#emailInput").val();
+
+            // Kiểm tra nếu tên, số điện thoại, hoặc email không được nhập
+            if (!nameInput || !phoneInput || !emailInput) {
+                alert("Vui lòng điền đầy đủ thông tin tên, số điện thoại, và email.");
+                return; // Dừng lại nếu thông tin không đầy đủ
+            }
+
+            // Kiểm tra số điện thoại không là chữ số
+            if (isNaN(phoneInput) || phoneInput.indexOf('.') !== -1) {
+                alert("Số điện thoại phải là chữ số nguyên dương.");
+                return; // Dừng lại nếu số điện thoại không hợp lệ
+            }
+
+            // Kiểm tra cấu trúc địa chỉ email
+            if (!isValidEmail(emailInput)) {
+                alert("Địa chỉ email không hợp lệ. Vui lòng kiểm tra lại.");
+                return; // Dừng lại nếu email không hợp lệ
+            }
+
+            var cartItems = JSON.parse(localStorage.getItem("cartItems"));
+
+            if (cartItems && cartItems.length > 0) {
+                // Xây dựng chuỗi thông tin mới với tên vé và giá vé
+                var ticketInfo = cartItems.map(function (item) {
+                    return item.name + " (" + item.quantity + " vé)";
+                }).join(", ");
+
+                var totalPrice = cartItems.reduce(function (total, item) {
+                    return total + item.subtotal;
+                }, 0);
+
+                // Thêm thông tin vé vào chuỗi thông tin
+                var newInfo = nameInput + " - " + phoneInput + " - " + emailInput + " - " + ticketInfo + " - " + totalPrice;
+
+                // Lấy danh sách thông tin từ Local Storage
+                var storedInfo = localStorage.getItem("info");
+
+                // Nếu đã có thông tin, thêm thông tin mới vào cuối danh sách
+                if (storedInfo) {
+                    storedInfo += '\n' + newInfo;
+                } else {
+                    // Nếu chưa có thông tin, tạo mới danh sách thông tin
+                    storedInfo = newInfo;
+                }
+
+                // Lưu danh sách thông tin mới vào Local Storage
+                localStorage.setItem("info", storedInfo);
+
+                alert("Đặt vé hoàn tất!");
+
+                // Reset các trường nhập liệu
+                $("#nameInput").val("");
+                $("#phoneInput").val("");
+                $("#emailInput").val("");
+
+                // Xóa giỏ hàng
+                localStorage.removeItem("cartItems");
+                updateTotalPrice();
+                updateCartList();
+            } else {
+                alert("Giỏ hàng trống. Vui lòng thêm vé vào giỏ hàng trước khi đặt vé.");
+            }
+        });
+
+        function isValidEmail(email) {
+            // Sử dụng biểu thức chính quy để kiểm tra cấu trúc email
+            var emailRegex = (/^[\w-]+(\.[\w-]+)*@gmail\.com$|^[\w-]+(\.[\w-]+)*@email\.com$/);
+            return emailRegex.test(email);
+        }
+
+        function updateTotalPrice() {
+            var totalPrice = 0;
+            $.each(cartItems, function (index, item) {
+                totalPrice += item.subtotal;
+            });
+            $("#totalPrice").text("Tổng tiền: $" + totalPrice);
+        }
+
+        function updateCartList() {
+            $("#cartList").empty();
+            $.each(cartItems, function (index, item) {
+                var cartItem = $("<li>").text(item.name + " - " + item.quantity + " vé - Tổng giá: $" + item.subtotal);
+                $("#cartList").append(cartItem);
+            });
+        }
+    });
+</script>

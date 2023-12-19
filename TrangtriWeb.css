@@ -1,0 +1,677 @@
+@media (min-width: 1400px) {
+
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm {
+    max-width: max-content;
+  }
+}
+
+@media (min-width: 768px) {
+  .smaller-logo {
+    max-width: 100%;
+    /* Đảm bảo hình ảnh không vượt quá kích thước của phần tử cha */
+    height: auto;
+    /* Giữ tỷ lệ khung hình khi thay đổi kích thước */
+    width: 100px;
+    /* Đặt chiều rộng mong muốn cho hình ảnh */
+  }
+}
+
+@media (max-width: 768px) {
+
+  #slideshow1,
+  #slideshow {
+    width: 100%;
+  }
+}
+
+.slideshow {
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  height: 300px;
+  /* Điều chỉnh chiều cao theo ý của bạn */
+}
+
+.slideshow img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media only screen and (min-width: 768px) {
+
+  /* Điều chỉnh kiểu dáng cho màn hình trung bình và lớn hơn */
+  aside {
+    max-width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
+  /* Điều chỉnh kiểu dáng cho màn hình lớn và lớn hơn */
+  aside {
+    max-width: 40%;
+  }
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Tùy chỉnh phần header */
+header {
+  background-image: url(Hinh-nen-vu-tru-cute-14.jpg);
+  padding: 10px;
+}
+
+h1 {
+  color: #6e3b89;
+  font-size: 3rem;
+  text-align: center;
+  color: #6e3b89;
+  font-size: 90px;
+  margin: 0;
+  /* Loại bỏ margin mặc định của h1 */
+}
+
+
+.smaller-logo {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+  
+
+body {
+  background-image: url(https://images3.alphacoders.com/132/1328226.png);
+  background-size: cover;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+}
+
+footer {
+  height: 140px;
+  background-image: url(Hinh-nen-vu-tru-cute-14.jpg);
+  max-width: 107.6%;
+  margin-top: 20px;
+    /* Rộng hết cỡ */
+
+}
+
+.logo {
+  padding-right: 100%;
+}
+
+.font-weight-bold {
+  font-weight: bold;
+}
+
+body,
+html {
+  width: 100%;
+  margin: 0;
+}
+
+.custom-bg-color {
+  background-color: #2b0557;
+  /* Thay đổi mã màu tùy chỉnh theo ý muốn của bạn */
+}
+
+.navbar {
+  min-width: 100.8%;
+  /* Thiết lập chiều cao tối thiểu của thanh điều hướng là 100% chiều cao của màn hình */
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-collapse {
+  flex-grow: 1;
+  /* Chia sẻ không gian chiều cao còn lại */
+}
+
+span {
+  color: #fff;
+  text-align: center;
+}
+
+#navbarSupportedContent {
+  width: 100%;
+}
+
+#menu {
+  display: flex;
+  justify-content: space-around;
+  /* Chia đều các mục trong thanh điều hướng */
+}
+
+.navbar-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-item {
+  flex-grow: 1;
+}
+
+.dropdown_menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+}
+
+.nav-item:hover .dropdown_menu {
+  display: block;
+}
+
+
+.row h2 {
+  color: #d7c3f7;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Nunito', sans-serif;
+  font-size: 50px;
+  line-height: 1.6;
+
+}
+
+.row p {
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Nunito', sans-serif;  
+  font-size: 18px;
+  /* Cỡ chữ 18px */
+  line-height: 1.6;
+  /* Độ cao dòng */
+  color: #d7c3f7;
+  /* Màu chữ đen */
+  margin-bottom: 15px;
+  left: 100%;
+  text-align: justify;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#menu {
+  list-style: none;
+  height: 48px;
+}
+
+#menu li {
+  text-align: left;
+  color: #fff;
+}
+
+#menu li a {
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  padding: 15px;
+  color: #fff;
+  background-color: #2b0557;
+}
+
+#menu>li {
+  float: left;
+  border-right: 1px solid #fff;
+  position: relative;
+}
+
+#menu>li>ul.dropdown_menu {
+  position: absolute;
+  list-style: none;
+  display: none;
+  width: 200px;
+}
+
+#menu>li:hover>a {
+  background-color: #2b0557;
+}
+
+#menu>li:hover>ul.dropdown_menu {
+  z-index: 100;
+}
+
+ul.dropdown_menu>li {
+  position: relative;
+}
+
+ul.dropdown_menu>li>ul.submenu {
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 200px;
+  left: 200px;
+}
+
+ul.dropdown_menu>li:hover>a {
+  background-color: #410b63 !important;
+}
+
+ul.dropdown_menu>li:hover>ul.submenu {
+  z-index: 100;
+}
+
+ul.submenu>li:hover>a {
+  background-color: #410b63 !important;
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.arrow-down {
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #fff;
+}
+
+.arrow-right {
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid #fff;
+}
+
+
+
+/*PHUCNGUYEN*/
+.tintuc {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.attraction {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.attraction img {
+  max-width: 400px;
+  border: 5px solid #fff;
+  border-radius: 5px;
+  margin-right: 20px;
+  transition: transform 0.3s ease;
+}
+
+.attraction img:hover {
+  transform: scale(1.1);
+}
+
+.attraction h3 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.attraction h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.attraction p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* Kiểu dáng mới cho nội dung được thêm vào */
+.tintuc {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.attraction {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.attraction img {
+  max-width: 400px;
+  border: 5px solid #7d1979;
+  border-radius: 5px;
+  margin-right: 20px;
+  transition: transform 0.3s ease;
+}
+
+.attraction img:hover {
+  transform: scale(1.1);
+}
+
+.attraction h3 {
+  font-size: 24px;
+  margin: 0;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Nunito', sans-serif;
+}
+
+.attraction h2 {
+  font-size: 24px;
+  margin: 0;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Nunito', sans-serif;
+}
+
+.attraction a {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Nunito', sans-serif;
+}
+
+.attraction p {
+  font-size: 18px;
+  margin: 10px 0;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Nunito', sans-serif;
+}
+
+
+/* Kiểu dáng bổ sung cho nội dung mới */
+.tintuc {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #3e0385;
+  /* Thêm màu nền nếu cần */
+  box-shadow: 0 0 10px rgba(2, 2, 2, 2);
+  /* Thêm đổ bóng nếu cần */
+}
+
+/* Bạn có thể điều chỉnh kiểu dáng dựa trên yêu cầu thiết kế của mình */
+/*PHUCNGUYEN*/
+
+
+/*TIẾN THÁI*/
+.datve {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #3e0385;
+  /* Thêm màu nền nếu cần */
+  box-shadow: 0 0 10px rgba(2, 2, 2, 2);
+  /* Thêm đổ bóng nếu cần */
+}
+
+.custom-content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  /* Khoảng cách giữa các phần */
+  background-color: #650961;
+  padding: 20px;
+  border-radius: 5px;
+  flex-direction: row;
+  max-width: 100%;
+  /* Đặt chiều ngang tối đa */
+  color: #fff;
+}
+
+.ticket-card {
+  background-color: #650961;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  /* Khoảng cách giữa vé và tiêu đề */
+  border: 1px solid #ddd;
+  color: #fff;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  display: inline-block;
+}
+
+.quantity-input {
+  width: 50px;
+  margin-right: 5px;
+}
+
+#cartList {
+  list-style-type: none;
+  padding: 0;
+}
+
+#cartList li {
+  margin-bottom: 5px;
+}
+
+/* Phần nội dung trong .ticket-card */
+.ticket-card h3,
+.ticket-card p {
+  margin: 0;
+  /* Loại bỏ margin mặc định */
+}
+
+/* Nút "Thêm vào giỏ hàng" */
+.addInfoButton {
+  background-color: #be1958;
+  /* Màu nền xanh lá cây */
+  color: #fff;
+  /* Màu chữ trắng */
+  border: none;
+  padding: 10px 15px;
+  /* Kích thước padding */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  /* Bo tròn góc */
+  transition: background-color 0.3s;
+  /* Hiệu ứng chuyển đổi màu nền */
+}
+
+/* Hiệu ứng hover cho nút "Thêm vào giỏ hàng" */
+.addInfoButton:hover {
+  background-color: #45a049;
+  /* Màu nền xanh lá cây nhạt hơn khi hover */
+}
+
+/* Hiệu ứng transition cho nút "Thêm vào giỏ hàng" */
+.addInfoButton {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+.giohang {
+  background-color: #650961;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  margin-left: 25%;
+  /* Khoảng cách giữa giỏ hàng và nhập thông tin */
+  max-width: 50%;
+  /* Đặt chiều ngang tối đa */
+  color: #fff;
+  text-align: center;
+}
+
+.thongtin {
+  background-color: #650961;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 300px;
+  margin: 0 auto;
+  /* Canh giữa form */
+}
+
+.thongtin h2 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.thongtin label {
+  display: block;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.thongtin input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.thongtin button {
+  background-color: #fff;
+  color: #650961;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+}
+
+.hienthi {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #3e0385;
+  /* Thêm màu nền nếu cần */
+  box-shadow: 0 0 10px rgba(2, 2, 2, 2);
+  /* Thêm đổ bóng nếu cần */
+  color: #fff;
+  margin-bottom: 300px;
+
+}
+
+.infoTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#infoTable th,
+#infoTable td {
+  border: 1px solid #ddd;
+  /* Màu và độ dày đường kẻ ngăn */
+  padding: 8px;
+  /* Khoảng cách giữa nội dung và đường kẻ ngăn */
+}
+
+.infoTable th,
+#infoTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.infoTable th {
+  background-color: #650961;
+  color: white;
+}
+
+.infoTable tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#infoTable tbody tr:hover {
+  background-color: #ddd;
+}
+
+.delete-info-button {
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.delete-info-button:hover {
+  background-color: #cc0000;
+}
+
+.feedback-container {
+  max-width: 800px;
+  /* Đặt chiều rộng tối đa của khung */
+  margin: 0 auto;
+  /* Căn giữa khung */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  /* Khoảng cách nội dung và cạnh của khung */
+  padding: 20px;
+  background-color: #3e0385;
+  /* Thêm màu nền nếu cần */
+  box-shadow: 0 0 10px rgba(2, 2, 2, 2);
+  /* Thêm đổ bóng nếu cần */
+  border-radius: 10px;
+  /* Bo tròn góc của khung */
+  color: #fff;
+}
+
+.form-group.row {
+  margin-bottom: 15px;
+  /* Điều chỉnh giá trị này để tăng hoặc giảm khoảng cách */
+}
+
+#feedbackForm {
+  margin-top: 20px;
+  /* Khoảng cách từ form đến phía trên của khung */
+}
+
+.btn-primary {
+  margin-top: 20px;
+  /* Khoảng cách từ button đến phía trên của khung */
+}
+
+.container {
+  margin-top: 50px;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  background-color: #0d6efd;
+  color: #fff;
+  text-align: center;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  width: 100%;
+}
+
+.form-wrapper {
+  margin-bottom: 300px;
+}
