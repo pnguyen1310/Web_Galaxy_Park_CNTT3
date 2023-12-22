@@ -94,7 +94,7 @@ body {
   margin: 0;
   padding: 0;
 }
-
+  
 
 body {
   background-image: url(https://images3.alphacoders.com/132/1328226.png);
@@ -109,7 +109,7 @@ footer {
   background-image: url(Hinh-nen-vu-tru-cute-14.jpg);
   max-width: 107.6%;
   margin-top: 20px;
-  /* Rộng hết cỡ */
+    /* Rộng hết cỡ */
 
 }
 
@@ -192,7 +192,7 @@ span {
 
 .row p {
   font-family: 'Montserrat', sans-serif;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Nunito', sans-serif;  
   font-size: 18px;
   /* Cỡ chữ 18px */
   line-height: 1.6;
@@ -296,6 +296,18 @@ ul.submenu>li:hover>a {
 
 
 /*PHUCNGUYEN*/
+.tintuc {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.attraction {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
 .attraction img {
   max-width: 400px;
   border: 5px solid #fff;
@@ -324,61 +336,131 @@ ul.submenu>li:hover>a {
 }
 
 /* Kiểu dáng mới cho nội dung được thêm vào */
-body {
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Nunito', sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-
 .tintuc {
   max-width: 1200px;
   margin: 20px auto;
   padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 20px;
-  background-color: #650961;
 }
 
 .attraction {
-  margin: 10px;
-  max-width: 400px;
-  background-color: #f4f4f4;
-  border-radius: 8px;
-  overflow: hidden;
-
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .attraction img {
-  width: 100%;
-  height: 200px;
-  /* Đặt chiều cao cố định cho tất cả các hình ảnh */
-  object-fit: cover;
-  /* Đảm bảo tỷ lệ khung hình không bị thay đổi */
-  border-bottom: 1px solid #ddd;
+  max-width: 400px;
+  border: 5px solid #7d1979;
+  border-radius: 5px;
+  margin-right: 20px;
+  transition: transform 0.3s ease;
+}
 
+.attraction img:hover {
+  transform: scale(1.1);
+}
+
+.attraction h3 {
+  font-size: 24px;
+  margin: 0;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Nunito', sans-serif;
+}
+
+.attraction h2 {
+  font-size: 24px;
+  margin: 0;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 .attraction a {
   text-decoration: none;
-  color: #333;
-  display: block;
-  padding: 10px;
   font-family: 'Montserrat', sans-serif;
   font-family: 'Nunito', sans-serif;
 }
 
-h2,
-h3,
-p {
-  margin: 0;
-  padding: 0;
+.attraction p {
+  font-size: 18px;
+  margin: 10px 0;
+  color: white;
   font-family: 'Montserrat', sans-serif;
   font-family: 'Nunito', sans-serif;
 }
+
+
+/* Kiểu dáng bổ sung cho nội dung mới */
+.tintuc {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #3e0385;
+  /* Thêm màu nền nếu cần */
+  box-shadow: 0 0 10px rgba(2, 2, 2, 2);
+  /* Thêm đổ bóng nếu cần */
+}
+.feedback-container {
+  max-width: 800px;
+  /* Đặt chiều rộng tối đa của khung */
+  margin: 0 auto;
+  /* Căn giữa khung */
+  margin-top: 20px;
+  margin-bottom: 200px;
+  padding: 20px;
+  /* Khoảng cách nội dung và cạnh của khung */
+  padding: 20px;
+  background-color: #3e0385;
+  /* Thêm màu nền nếu cần */
+  box-shadow: 0 0 10px rgba(2, 2, 2, 2);
+  /* Thêm đổ bóng nếu cần */
+  border-radius: 10px;
+  /* Bo tròn góc của khung */
+  color: #fff;
+}
+
+.form-group.row {
+  margin-bottom: 15px;
+  /* Điều chỉnh giá trị này để tăng hoặc giảm khoảng cách */
+}
+
+#feedbackForm {
+  margin-top: 20px;
+  /* Khoảng cách từ form đến phía trên của khung */
+}
+
+.btn-primary {
+  margin-top: 20px;
+  /* Khoảng cách từ button đến phía trên của khung */
+}
+
+.container {
+  margin-top: 50px;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  background-color: #0d6efd;
+  color: #fff;
+  text-align: center;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  width: 100%;
+}
+
 
 /* Bạn có thể điều chỉnh kiểu dáng dựa trên yêu cầu thiết kế của mình */
 /*PHUCNGUYEN*/
@@ -590,66 +672,3 @@ p {
   background-color: #cc0000;
 }
 
-.feedback-container {
-  max-width: 800px;
-  /* Đặt chiều rộng tối đa của khung */
-  margin: 0 auto;
-  /* Căn giữa khung */
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 20px;
-  /* Khoảng cách nội dung và cạnh của khung */
-  padding: 20px;
-  background-color: #3e0385;
-  /* Thêm màu nền nếu cần */
-  box-shadow: 0 0 10px rgba(2, 2, 2, 2);
-  /* Thêm đổ bóng nếu cần */
-  border-radius: 10px;
-  /* Bo tròn góc của khung */
-  color: #fff;
-}
-
-.form-group.row {
-  margin-bottom: 15px;
-  /* Điều chỉnh giá trị này để tăng hoặc giảm khoảng cách */
-}
-
-#feedbackForm {
-  margin-top: 20px;
-  /* Khoảng cách từ form đến phía trên của khung */
-}
-
-.btn-primary {
-  margin-top: 20px;
-  /* Khoảng cách từ button đến phía trên của khung */
-}
-
-.container {
-  margin-top: 50px;
-}
-
-.card {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.card-header {
-  background-color: #0d6efd;
-  color: #fff;
-  text-align: center;
-}
-
-.card-body {
-  padding: 20px;
-}
-
-.form-group {
-  margin-bottom: 20px;
-}
-
-.btn-primary {
-  width: 100%;
-}
-
-.form-wrapper {
-  margin-bottom: 300px;
-}
