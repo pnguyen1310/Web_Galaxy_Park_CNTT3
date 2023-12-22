@@ -47,7 +47,7 @@
                                 style="text-align: center;"><i class="bi bi-book"></i> Tin tức</a>
                             <ul class="dropdown_menu">
                                 <li>
-                                    <a href="javascript:void(0)" style="text-align: center;"><i
+                                    <a href="tintucchung.html" style="text-align: center;"><i
                                             class="bi bi-star-fill"></i> Nổi bật </a>
                                 </li>
                                 <li>
@@ -173,6 +173,11 @@
 
 </html>
 <script src="http://code.jquery.com/jquery-1.7.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
 <script>
     $('#menu > li').hover(function () {
         // khi thẻ menu li bị hover thì drop down menu thuộc thẻ li đó sẽ trượt xuống(hiện)
@@ -189,6 +194,31 @@
         $('.submenu', this).slideUp();
     });
 </script>
+
+<script>
+    // Ở phần JavaScript, thêm sự kiện click cho phần body của trang
+    $('body').click(function (e) {
+        // Kiểm tra xem phần click có nằm ngoài thanh menu không
+        if (!$(e.target).closest('.navbar').length) {
+            // Nếu nằm ngoài, ẩn thanh menu
+            $('#navbarSupportedContent').collapse('hide');
+        }
+    });
+
+    // Sự kiện hover cho menu và dropdown
+    $('#menu > li').hover(function () {
+        $('.dropdown_menu', this).slideDown();
+    }, function () {
+        $('.dropdown_menu', this).slideUp();
+    });
+
+    $('.dropdown_menu > li').hover(function () {
+        $('.submenu', this).slideDown();
+    }, function () {
+        $('.submenu', this).slideUp();
+    });
+</script>
+
 <script>
     $(document).ready(function () {
         var cartItems = [];

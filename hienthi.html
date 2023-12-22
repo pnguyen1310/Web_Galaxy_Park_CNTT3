@@ -45,7 +45,7 @@
                                 style="text-align: center;"><i class="bi bi-book"></i> Tin tức</a>
                             <ul class="dropdown_menu">
                                 <li>
-                                    <a href="javascript:void(0)" style="text-align: center;"><i
+                                    <a href="tintucchung.html" style="text-align: center;"><i
                                             class="bi bi-star-fill"></i> Nổi bật </a>
                                 </li>
                                 <li>
@@ -110,7 +110,7 @@
             <div class="thongtinkh">
                 <!-- Bảng thay thế cho danh sách -->
                 <table id="infoTable" class="table">
-                    <thead>
+                    <thead style="text-align: center;">
                         <tr>
                             <th>Tên</th>
                             <th>Số điện thoại</th>
@@ -163,6 +163,30 @@
         $('.submenu', this).slideDown();
     }, function () {
         // khi thẻ dropdown_menu li bị hover thì submenusubmenu thuộc thẻ li đó sẽ trượt lên(ẩnẩn)
+        $('.submenu', this).slideUp();
+    });
+</script>
+
+<script>
+    // Ở phần JavaScript, thêm sự kiện click cho phần body của trang
+    $('body').click(function (e) {
+        // Kiểm tra xem phần click có nằm ngoài thanh menu không
+        if (!$(e.target).closest('.navbar').length) {
+            // Nếu nằm ngoài, ẩn thanh menu
+            $('#navbarSupportedContent').collapse('hide');
+        }
+    });
+
+    // Sự kiện hover cho menu và dropdown
+    $('#menu > li').hover(function () {
+        $('.dropdown_menu', this).slideDown();
+    }, function () {
+        $('.dropdown_menu', this).slideUp();
+    });
+
+    $('.dropdown_menu > li').hover(function () {
+        $('.submenu', this).slideDown();
+    }, function () {
         $('.submenu', this).slideUp();
     });
 </script>
